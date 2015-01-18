@@ -1,0 +1,242 @@
+body{
+	margin:0;
+	padding:0;
+	background-color: #1c1d1d;
+}
+
+.mainWrap{
+	margin-left: auto;
+	margin-right: auto;
+	width:800px;
+}
+
+.header{
+	background-image: url('images/headerBG.png');
+	background-repeat: repeat-x;
+	background-size: 5px, 10px;
+	width: 100%;
+	height:50px;
+	margin:auto;
+	text-align: center
+}
+
+.headerLogo{
+	float:left;
+	padding-left: 4px;
+	padding-top: 4px;
+}
+
+.headerLink{
+	float:right;
+	font-family: calibri;
+	font-size: 14pt;
+	font-weight: bold;
+	margin-right: 20px;
+	padding-top:15px;
+}
+
+.headerLink a{
+	color: white;
+	text-decoration: none;
+}
+
+.headerLink a:hover{
+	color: #d5a00f;
+	text-decoration: none;
+}
+
+.optionsImg{
+	height:25px;
+}
+
+.headerImg{
+	width: 100%;
+}
+
+.wrap1{
+	width:100%;
+	height:226px;
+	margin:auto;
+	background-color:#white;
+}
+
+#corp1{
+	width: 			394px;
+	float:			left;
+	height:			220px;
+	background-color:#003A5E;
+	margin-right:	6px;
+	margin-left:	0px;
+	margin-top:		6px;
+	margin-bottom:	6px;
+	position: relative;
+}
+
+#corp1:hover{
+	background-color:#005593;
+}
+
+#corp2{
+	width: 			394px;
+	float:			right;
+	height:			220px;
+	background-color:#003A5E;
+	margin-right:	0px;
+	margin-left:	6px;
+	margin-top:		6px;
+	margin-bottom:	6px;
+	position: relative;
+}
+
+#corp2:hover{
+	background-color:#005593;
+}
+
+#corp3{
+	width:528px;
+	height:220px;
+	float: right;
+	background-color:#003A5E;
+	margin-right:	0px;
+	margin-left:	6px;
+	margin-top:		6px;
+	margin-bottom:	6px;
+	position: relative;
+}
+
+#corp3:hover{
+	background-color:#005593;
+}
+
+#corp4{
+	width:260px;
+	height:220px;
+	float: left;
+	background-color:#003A5E;
+	margin-right:	6px;
+	margin-left:	0px;
+	margin-top:		6px;
+	margin-bottom:	6px;
+	position: relative;
+}
+
+#corp4:hover{
+	background-color:#005593;
+}
+
+.wrap2{
+	width:100%;
+	height: 470px;
+	background-color:#white;
+}
+
+.wrap3{
+	width:528px;
+	height:452px;
+	float:left;
+	margin:auto;
+	margin-right:	6px;
+	margin-left:	0px;
+	margin-top:		6px;
+	margin-bottom:	6px;
+}
+
+#corp5{
+	width:528px;
+	height:220px;
+	background-color:#003A5E;
+	margin-bottom: 	12px;
+	position: relative;
+}
+
+#corp5:hover{
+	background-color:#005593;
+}
+
+#corp6{
+	width:528px;
+	height:220px;
+	background-color:#003A5E;
+	position: relative;
+}
+
+#corp6:hover{
+	background-color:#005593;
+}
+
+#corp7{
+	width:260px;
+	height: 452px;
+	float:right;
+	background-color:#003A5E;
+	margin-right:	0px;
+	margin-left:	6px;
+	margin-top:		6px;
+	margin-bottom:	6px;
+	position: relative;
+}
+
+#corp7:hover{
+	background-color:#005593;
+}
+
+.wrap4{
+	width: 100%;
+	height: 220px;
+	margin:auto;
+	background-color:white;
+}
+
+#corp8{
+	width:260px;
+	height:220px;
+	float: right;
+	background-color:#003A5E;
+	margin-right:	0px;
+	margin-left:	6px;
+	margin-top:		6px;
+	margin-bottom:	6px;
+	position: relative;
+}
+
+#corp8:hover{
+	background-color:#005593;
+}
+
+#corp9{
+	width:528px;
+	height:220px;
+	float: left;
+	background-color:#003A5E;
+	margin-right:	6px;
+	margin-left:	0px;
+	margin-top:		6px;
+	margin-bottom:	6px;
+	position: relative;
+
+}
+
+#corp9:hover{
+	background-color:#005593;
+}
+
+.labelCenter{
+	color:white;
+	font-family: calibri;
+	font-size: 22pt;
+	text-align: center; 
+	vertical-align:middle;
+}
+
+.tileImg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index:10;
+}
+
+.fadeImg{
+	position: absolute;
+	left:0;
+	top:0;
+}

@@ -1,0 +1,483 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic&subset=latin,latin-ext);
+
+
+body{
+	background: #000;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.fullH{
+	height:100%;
+}
+
+.fullW{
+	width:100%;
+}
+
+.absolute{
+	position: absolute;
+}
+
+.relative{
+	position: relative;
+}
+
+.floatLeft{
+	float: left;
+}
+
+.noLineHeight{
+	line-height: 0.8;
+}
+
+.gutterSpace{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.nav > li > a{
+	padding:15px 7px;
+}
+
+.nav > li > a.linkDivider{
+	padding-left:1px;
+	padding-right:1px;
+}
+
+@media only screen and (max-width: 776px){
+	.nav > li> a{
+		padding: 5px 10px;
+	}
+}
+
+.splashScreen{
+
+	/*height:735px;*/
+	width:100%;
+	position:relative;
+}
+
+.splashScreenZ{
+	z-index: 20;
+}
+
+.curtainBG{
+	width:100%;
+}
+
+.splashMessage{
+	position: absolute;
+	right:0;
+	bottom:0;
+	margin-bottom:10px;
+}
+
+.splashStar{
+	color:#fff;
+	margin: 0;
+	font-family: 'Lato';
+	font-size: 24pt;
+}
+
+.splashTitle{
+	color:#fff;
+	font-family: 'Lato';
+	font-size: 12pt;
+	margin:0;
+}
+
+.navbarZ{
+	z-index: 21;	
+}
+
+.sign{
+	background-color: rgba(0,0,0,0.7);
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	height:20%;
+	min-height:60px;
+	width:100%;
+	margin:auto;
+	color:white;
+	font-family: 'Lato';
+	clip: rect();
+	overflow: hidden;
+}
+
+.signOuterDiv{
+}
+
+.signTop{
+	height:55%;
+}
+
+.comicOuterDiv{
+	position: relative;
+}
+
+.comicTop{
+}
+
+.comic{
+	position: relative;
+	z-index: 20;
+}
+
+.starOuter{
+	overflow: hidden;
+	height:800px;
+}
+
+.starring{
+	width:2400px;
+	float:right;
+	position:absolute;
+	left:-400px;
+}
+
+.chairs{
+	width:100%;
+	float:right;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+}
+
+.sponsoring{
+	float:right;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	border-style: solid;
+	border-color: white;
+	border-width: 5px;
+}
+
+.starringZ{
+	z-index: 19;
+}
+
+.hostZ{
+	z-index:18;
+	box-shadow: 0px 5px 10px #666;
+}
+
+.bioBG{
+	width:100%;
+	background-color: rgba(0,0,0,0.25);
+	color:#fff;
+	position: absolute;
+	z-index: 25;
+}
+
+.bioSign{
+	background-color: rgba(0,0,0,0.75);
+	border-radius: 10px;
+	position: absolute;
+	z-index:26;
+	margin: auto;
+	text-align: center;
+	padding:10px 15px;
+	font-family: 'Lato';
+	cursor:pointer;
+}
+
+.bioSignText{
+	color:#fff;
+}
+
+a.bioSignText:hover{
+	color:#fff;
+	text-decoration: none;
+}
+
+a.bioSignText:focus{
+	color:#fff;
+	text-decoration: none;
+}
+
+.title{
+	opacity: 0.7;
+	font-family: 'Lato';
+	position: relative;
+}
+
+.titleText{
+	position: absolute;
+	bottom:2px;
+}
+
+.bioInfo{
+	font-family: 'Lato';
+	overflow: auto;
+}
+
+.invisible{
+	visibility: hidden;
+	display:none;
+}
+
+.ceoTitleZ{
+	z-index:17;
+	box-shadow: 0px 5px 10px #222;
+}
+
+.ceoTitle{
+	background-color: white;
+	overflow: auto;
+	margin:auto;
+	width:100%;
+	text-align: center;
+	display: table;
+}
+
+.ceoTitleH1{
+	font-family: 'Lato';
+	font-weight: bold;
+}
+
+.ceoTitleSpan{
+	font-family: 'Lato';
+	width:100%;
+}
+
+.ceoZ{
+	z-index:16;
+	box-shadow: 0px 5px 10px #000;
+	overflow: hidden;
+}
+
+.ceo{
+	overflow: hidden;
+	height:800px;
+	width:33.334%;
+	float:left;
+	z-index:13;
+	cursor:pointer;
+}
+.ceo1{
+	z-index:13;
+}
+
+.ceo2{
+	z-index:14;
+}
+.ceo3{
+	z-index:15;
+}
+
+.imgCeo1{
+	margin-left: -250px;
+}
+
+.imgCeo2{
+	margin-left: -800px;
+}
+
+.imgCeo3{
+	margin-left: -200px;
+}
+
+.ceoName{
+	background-color: rgba(0,0,0,0.75);
+	color:#fff;
+	padding:10px 25px;
+	margin-left:13%;
+	position: absolute;
+	top:65%;
+	font-size: 16pt;
+	z-index: 25;
+	cursor:pointer;
+}
+
+.ceoName:hover{
+	color:#d5a00f;
+}
+
+.bioBGCeo{
+	background-color: rgba(0,0,0,0.25);
+	color:#fff;
+	position: absolute;
+	right:0;
+}
+
+.galleryHeader{
+	margin-left:30px;
+	color:white;
+}
+
+.galleryItems{
+	height:100%;
+	width:33.333333%;
+	background: black;
+	overflow: hidden;
+}
+
+.scroller{
+	overflow: auto;
+	height:100%;
+	width: 100%
+}
+
+.galleryVideo{
+	width:66.666666%;
+}
+
+.galleryBG{
+	position: absolute;
+	top:0;
+	left:0;
+	overflow: auto;
+}
+
+.galleryImage{
+	width:100%;
+	margin:5px;
+}
+.galleryImageOuter{
+	overflow: hidden;
+}
+
+.noScroll{
+	overflow: hidden;
+}
+
+.wrapper{
+	overflow: auto;
+}
+
+.ceoWrapper{
+	overflow: hidden;
+}
+
+.judgesZ{
+	overflow: hidden;
+}
+
+.coachesZ{
+	overflow: hidden;
+}
+
+.sponsorsZ{
+	overflow: hidden;
+	background-color: white;
+}
+
+.sponsorWrapper{
+	overflow: hidden;
+}
+
+.sponsorName{
+	background-color: rgba(0,0,0,0.75);
+	color:#fff;
+	padding:10px 25px;
+	margin-left:13%;
+	position: absolute;
+	top:65%;
+	font-size: 16pt;
+	z-index: 25;
+	cursor:pointer;
+}
+
+.sponsorName:hover{
+	color:#d5a00f;
+}
+
+.sponsor{
+	overflow: hidden;
+	height:800px;
+	width:33.334%;
+	float:left;
+	z-index:13;
+}
+
+.imgSponsor{
+	float:left;
+}
+
+.imgSponWrap{
+	float: left;
+}
+
+.sponsorLink{
+	width:100%;
+}
+
+.sponsor{
+	position:relative;
+}
+
+.divider{
+	position: absolute;
+	left:-3px;
+	top:0;
+	height:100%;
+	width: 10;
+	background-color: rgba(20,20,20, 0);
+	box-shadow: 2px 0px 10px #aaa;
+}
+
+.email{
+	color:white;
+}
+
+a.email:hover{
+	color:#d5a00f;
+}
+
+.sponsorTable{
+	color:white;
+	border-color:white;
+	background-color: rgba(0,0,0,0.5);
+	font-family: 'Lato';
+	font-size: 7pt;
+	overflow: auto;
+}
+
+table > tbody > tr > td > p{
+	margin:0px;
+	padding-left: 3px;
+	padding-right:3px;
+	vertical-align:middle;
+}
+
+.tableHeaderBG{
+	background-color: rgba(0,0,0,0.75);
+}
+
+
+.tableScroller{
+	overflow: auto;
+}
+
+.middle{
+	vertical-align: middle;
+}
+
+.signMessage{
+	margin-left:5px;
+	margin-top:5px;
+	font-family: 'Lato';
+	cursor:pointer;
+}
+
+.extraScreen{
+	width:0px;
+}
+
+.blackScreen{
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	left:0;
+	top:0;
+	width:100%;
+	z-index: 26;
+}
+
+.mainMessage{
+	position: relative;
+	z-index: 27;
+}

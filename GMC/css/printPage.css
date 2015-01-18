@@ -1,0 +1,4 @@
+@media print{
+    #noPrint * { visibility: hidden; display:none; }
+    .hidden {visibility: visible !important; display:inline-block !important;}
+}

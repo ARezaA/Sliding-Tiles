@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dundee Corporation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta name="viewport" http-equiv="Content-Style-Type" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<link rel="stylesheet" type="text/css" href="css/humourMeCSS.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+</head>
+
+<body>
+
+<div class="debug hidden" style="position:fixed; background:white; z-index:22;">debug</div>
+
+<div class="navbarSpacing"></div>
+
+<div class="container-fluid relative splashScreenZ">
+	<div class="row">
+		<div class="col-xs-12 splashScreen">
+			<img class="curtainBG absolute" src="images/FinalCurtain.png"/>
+			<div class="row fullH">
+				<div class="col-xs-1"></div>
+				<div class="col-xs-7 vcenter fullH">
+					<div class="comicOuterDiv fullH">
+						<div class="comicTop"></div>
+						<img class="comic hidden-xs hidden-sm" src="images/ComicSplash.png"/>
+						<img class="comic hidden-md hidden-lg" src="images/LogoSplash.png"/>
+						<div class="splashMessage hidden-xs hidden-sm"><h4 class="splashTitle">Starring:</h4><h1 class="splashStar">Gabriel Iglesias</h1></div>
+					</div>
+				</div>
+				<div class="col-xs-4 vcenter fullH">
+					<div class="signOuterDiv fullH">
+						<div class="signTop"></div>
+						<div class="sign vcenter">
+							<div class="signMessage animated" onclick="javascript:clickSign(0)">
+								<div class="dundeeF gutterSpace">Diamond Sponsor</div>
+								<img class="dundeeLogoW gutterSpace" src="images/DundeeCorpLogoWhite.png">
+							</div>
+							<div class="signMessage animated hidden" onclick="javascript:clickSign(1)">
+								<div class="gutterSpace dateH">Save the Date</div>
+								<div class="dateMainW">
+									<div class="relative floatLeft gutterSpace noLineHeight dateMain">OCT 13</div>
+									<table class="relative floatLeft gutterSpace noLineHeight dateSub" border="0" cellspacing="0" cellpadding="0">
+										<tr><td>TUES</td></tr>
+										<tr><td>2015</td></tr>
+									</table>
+								</div>
+								<div class="gutterSpace dateF">Elgin Theatre, Toronto</div>
+							</div>
+							<div class="signMessage animated gutterSpace hidden" onclick="javascript:clickSign(2)">
+								<img class="sickKidsLogoW" src="images/SickKidsWhite.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 extraScreen hidden">
+			<div class="blackScreen">
+				<img class="" src="images/Blue.jpg"/>
+			</div>
+			<img class="curtainBG absolute" src="images/FinalCurtain.png"/>
+		</div>
+	</div>
+</div>
+
+<header class="navbar navbar-inverse navbar-fixed-top navbarZ" role="navigation">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand gutterSpace" href="http://10.100.22.82/humourme/">Humour Me</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">STARRING</a></li>
+        <li class="hidden-xs"><a class="linkDivider">|</a></li>
+        <li><a href="#">CONTESTANTS</a></li>
+        <li class="hidden-xs"><a class="linkDivider">|</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li class="hidden-xs"><a class="linkDivider">|</a></li>
+        <li><a href="#">JUDGES &amp; COACHES</a></li>
+        <li class="hidden-xs"><a class="linkDivider">|</a></li>
+        <li><a href="#">SPONSORS</a></li>
+        <li class="hidden-xs"><a class="linkDivider">|</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">INFO <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">DATE</a></li>
+            <li><a href="#">SICKKIDS</a></li>
+            <li><a href="#">DIAMOND SPONSOR</a></li>
+            <li><a href="#">CONCEPT</a></li>
+            <li><a href="#">DONATIONS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="headerSpacing"></div>
+
+<div class="container-fluid relative starringZ">
+	<div class="row">
+		<div class="col-xs-12 starOuter relative">
+			<img class="starring" src="images/StarringBG.jpg"/>
+			<div class="row">
+				<div class="left1 col-xs-7"></div>
+				<div class="right1 col-xs-5">
+					<div class="bioBG">
+						<div class="bioSign" onclick="javascript:hideDiv('right1', 'left1')"><a class="bioSignText">Gabriel Iglesias</a></div>
+						<div class="title"><div class="titleText">Starring:</div></div>
+						<div class="empty"></div>
+						<div class="bioInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc porta lorem mollis lacinia id et sapien. Vivamus maximus risus purus, quis tempor nisl tincidunt eget. Nulla mollis, ante id imperdiet facilisis, augue nisl venenatis justo, eget sagittis turpis libero a risus. Pellentesque rhoncus, risus non interdum rhoncus, libero libero pulvinar felis, id molestie arcu urna id mauris. Curabitur facilisis turpis ultricies elit accumsan, quis eleifend est feugiat. Curabitur condimentum convallis justo a viverra. Aenean eu condimentum nisl. Suspendisse enim metus, porta sit amet lectus quis, tempor ultrices elit. Vestibulum nulla erat, iaculis in nisl et, ultricies feugiat diam. Proin elementum elit sed convallis dignissim. Sed nunc orci, fringilla quis gravida vitae, tempor in tellus. Nunc fermentum eleifend ante. Aliquam erat volutpat. Donec rhoncus dui et orci sodales, ut scelerisque risus iaculis. Proin vitae velit at risus ultrices iaculis. Suspendisse eget congue velit, imperdiet fringilla leo.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid relative hostZ">
+	<div class="row">
+		<div class="col-xs-12 starOuter relative">
+			<img class="starring" src="images/HostingBG.jpg"/>
+			<div class="row">
+				<div class="left2 col-xs-7"></div>
+				<div class="right2 col-xs-5">
+					<div class="bioBG">
+						<div class="bioSign" onclick="javascript:hideDiv('right2', 'left2')"><a class="bioSignText">Not Dave Foley</a></div>
+						<div class="title"><div class="titleText">Hosted By:</div></div>
+						<div class="empty"></div>
+						<div class="bioInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc porta lorem mollis lacinia id et sapien. Vivamus maximus risus purus, quis tempor nisl tincidunt eget. Nulla mollis, ante id imperdiet facilisis, augue nisl venenatis justo, eget sagittis turpis libero a risus. Pellentesque rhoncus, risus non interdum rhoncus, libero libero pulvinar felis, id molestie arcu urna id mauris. Curabitur facilisis turpis ultricies elit accumsan, quis eleifend est feugiat. Curabitur condimentum convallis justo a viverra. Aenean eu condimentum nisl. Suspendisse enim metus, porta sit amet lectus quis, tempor ultrices elit. Vestibulum nulla erat, iaculis in nisl et, ultricies feugiat diam. Proin elementum elit sed convallis dignissim. Sed nunc orci, fringilla quis gravida vitae, tempor in tellus. Nunc fermentum eleifend ante. Aliquam erat volutpat. Donec rhoncus dui et orci sodales, ut scelerisque risus iaculis. Proin vitae velit at risus ultrices iaculis. Suspendisse eget congue velit, imperdiet fringilla leo.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid relative ceoTitleZ">
+	<div class="row">
+		<div class="col-xs-12 ceoTitle relative">
+			<div><h1 class="ceoTitleH1">This Year's CEOs!</h1><span class="ceoTitleSpan">Will we laugh with them or at them!</span></div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid relative ceoZ">
+	<div class="row">
+		<div class="col-xs-12"><div class="ceoWrapper">
+			<div class="ceoDiv" onclick="javascript:resizeCEOItem('ceoZ', 1)"><div class="ceo">
+				<div class="ceoName hidden animated">Ceo1 Name</div>
+				<div class="bioBGCeo hidden">
+					<div class="title">
+						<div class="titleText">CEO of Big Bank:</div>
+					</div>
+					<div class="empty"></div>
+					<div class="bioInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc porta lorem mollis lacinia id et sapien. Vivamus maximus risus purus, quis tempor nisl tincidunt eget. Nulla mollis, ante id imperdiet facilisis, augue nisl venenatis justo, eget sagittis turpis libero a risus. Pellentesque rhoncus, risus non interdum rhoncus, libero libero pulvinar felis, id molestie arcu urna id mauris. Curabitur facilisis turpis ultricies elit accumsan, quis eleifend est feugiat. Curabitur condimentum convallis justo a viverra. Aenean eu condimentum nisl. Suspendisse enim metus, porta sit amet lectus quis, tempor ultrices elit. Vestibulum nulla erat, iaculis in nisl et, ultricies feugiat diam. Proin elementum elit sed convallis dignissim. Sed nunc orci, fringilla quis gravida vitae, tempor in tellus. Nunc fermentum eleifend ante. Aliquam erat volutpat. Donec rhoncus dui et orci sodales, ut scelerisque risus iaculis. Proin vitae velit at risus ultrices iaculis. Suspendisse eget congue velit, imperdiet fringilla leo.</div>
+				</div>
+				<img class="imgCeo imgCeo1" src="images/CEO1_Full.jpg"/>
+			</div></div>
+			<div class="ceoDiv" onclick="javascript:resizeCEOItem('ceoZ', 2)"><div class="ceo">
+				<div class="ceoName hidden animated">Ceo2 Name</div>
+				<div class="bioBGCeo hidden">
+					<div class="title">
+						<div class="titleText">CEO of Big Bank:</div>
+					</div>
+					<div class="empty"></div>
+					<div class="bioInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc porta lorem mollis lacinia id et sapien. Vivamus maximus risus purus, quis tempor nisl tincidunt eget. Nulla mollis, ante id imperdiet facilisis, augue nisl venenatis justo, eget sagittis turpis libero a risus. Pellentesque rhoncus, risus non interdum rhoncus, libero libero pulvinar felis, id molestie arcu urna id mauris. Curabitur facilisis turpis ultricies elit accumsan, quis eleifend est feugiat. Curabitur condimentum convallis justo a viverra. Aenean eu condimentum nisl. Suspendisse enim metus, porta sit amet lectus quis, tempor ultrices elit. Vestibulum nulla erat, iaculis in nisl et, ultricies feugiat diam. Proin elementum elit sed convallis dignissim. Sed nunc orci, fringilla quis gravida vitae, tempor in tellus. Nunc fermentum eleifend ante. Aliquam erat volutpat. Donec rhoncus dui et orci sodales, ut scelerisque risus iaculis. Proin vitae velit at risus ultrices iaculis. Suspendisse eget congue velit, imperdiet fringilla leo.</div>
+				</div>
+				<img class="imgCeo imgCeo2" src="images/CEO2_Full.jpg"/>
+			</div></div>
+			<div class="ceoDiv" onclick="javascript:resizeCEOItem('ceoZ', 3)"><div class="ceo">
+				<div class="ceoName hidden animated">Ceo3 Name</div>
+				<div class="bioBGCeo hidden">
+					<div class="title">
+						<div class="titleText">CEO of Big Bank:</div>
+					</div>
+					<div class="empty"></div>
+					<div class="bioInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc porta lorem mollis lacinia id et sapien. Vivamus maximus risus purus, quis tempor nisl tincidunt eget. Nulla mollis, ante id imperdiet facilisis, augue nisl venenatis justo, eget sagittis turpis libero a risus. Pellentesque rhoncus, risus non interdum rhoncus, libero libero pulvinar felis, id molestie arcu urna id mauris. Curabitur facilisis turpis ultricies elit accumsan, quis eleifend est feugiat. Curabitur condimentum convallis justo a viverra. Aenean eu condimentum nisl. Suspendisse enim metus, porta sit amet lectus quis, tempor ultrices elit. Vestibulum nulla erat, iaculis in nisl et, ultricies feugiat diam. Proin elementum elit sed convallis dignissim. Sed nunc orci, fringilla quis gravida vitae, tempor in tellus. Nunc fermentum eleifend ante. Aliquam erat volutpat. Donec rhoncus dui et orci sodales, ut scelerisque risus iaculis. Proin vitae velit at risus ultrices iaculis. Suspendisse eget congue velit, imperdiet fringilla leo.</div>
+				</div>
+				<img class="imgCeo imgCeo3" src="images/CEO3_Full.jpg"/>
+			</div></div>
+		</div></div>
+	</div>
+</div>
+
+<div class="container-fluid relative galleryZ">
+	<div class="row">
+		<div class="col-xs-12 starOuter relative">
+			<div class="row">
+				<img class="fullW galleryBG" src="images/galleryBG.jpg"/>
+				<div class="galleryHeader col-xs-12">Gallery</div>
+				<div class="galleryItems col-xs-4">
+					<div class="scroller">
+						<div class="col-xs-12">
+							<a class="col-sm-6 galleryImageOuter" href="#"><img class="galleryImage"src="images/CEOComic1.jpg"/></a>
+							<a class="col-sm-6 galleryImageOuter" href="#"><img class="galleryImage"src="images/CEOComic2.jpg"/></a>
+						</div>
+						<div class="col-xs-12">
+							<a class="col-sm-6 galleryImageOuter" href="#"><img class="galleryImage"src="images/CEOComic3.jpg"/></a>
+							<a class="col-sm-6 galleryImageOuter" href="#"><img class="galleryImage"src="images/CEOComic1.jpg"/></a>
+						</div>
+						<div class="col-xs-12">
+							<a class="col-sm-6 galleryImageOuter" href="#"><img class="galleryImage"src="images/CEOComic2.jpg"/></a>
+							<a class="col-sm-6 galleryImageOuter" href="#"><img class="galleryImage"src="images/CEOComic3.jpg"/></a>
+						</div>
+						<div class="col-xs-12">
+							<a class="col-sm-6 galleryImageOuter" href="#"><img class="galleryImage"src="images/CEOComic1.jpg"/></a>
+							<a class="col-sm-6 galleryImageOuter" href="#"><img class="galleryImage"src="images/CEOComic2.jpg"/></a>
+						</div>
+						<div class="col-xs-12">
+							<a class="col-sm-6 galleryImageOuter" href="#"><img class="galleryImage"src="images/CEOComic3.jpg"/></a>
+							<a class="col-sm-6 galleryImageOuter" href="#"><img class="galleryImage"src="images/CEOComic1.jpg"/></a>
+						</div>
+						<div class="col-xs-12">
+							<a class="col-sm-6 galleryImageOuter" href="#"><img class="galleryImage"src="images/CEOComic2.jpg"/></a>
+							<a class="col-sm-6 galleryImageOuter" href="#"><img class="galleryImage"src="images/CEOComic3.jpg"/></a>
+						</div>
+					</div>
+				</div>
+				<div class="galleryVideo col-xs-8">
+					<iframe width="100%" height="100%" src="//www.youtube.com/embed/oAYc7u3QaAM?autohide=1" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid relative ceoTitleZ">
+	<div class="row">
+		<div class="col-xs-12 ceoTitle relative">
+			<div><h1 class="ceoTitleH1">Judges and Coaches</h1></div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid relative judgesZ">
+	<div class="row">
+		<div class="col-xs-12"><div class="ceoWrapper halfHeight">
+			<div class="ceoDiv" onclick="javascript:resizeCEOItem('judgesZ', 1)"><div class="ceo">
+				<div class="ceoName hidden animated">Judge1 Name</div>
+				<div class="bioBGCeo hidden">
+					<div class="title">
+						<div class="titleText">Judge:</div>
+					</div>
+					<div class="empty"></div>
+					<div class="bioInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc porta lorem mollis lacinia id et sapien. Vivamus maximus risus purus, quis tempor nisl tincidunt eget. Nulla mollis, ante id imperdiet facilisis, augue nisl venenatis justo, eget sagittis turpis libero a risus. Pellentesque rhoncus, risus non interdum rhoncus, libero libero pulvinar felis, id molestie arcu urna id mauris. Curabitur facilisis turpis ultricies elit accumsan, quis eleifend est feugiat. Curabitur condimentum convallis justo a viverra. Aenean eu condimentum nisl. Suspendisse enim metus, porta sit amet lectus quis, tempor ultrices elit. Vestibulum nulla erat, iaculis in nisl et, ultricies feugiat diam. Proin elementum elit sed convallis dignissim. Sed nunc orci, fringilla quis gravida vitae, tempor in tellus. Nunc fermentum eleifend ante. Aliquam erat volutpat. Donec rhoncus dui et orci sodales, ut scelerisque risus iaculis. Proin vitae velit at risus ultrices iaculis. Suspendisse eget congue velit, imperdiet fringilla leo.</div>
+				</div>
+				<img class="imgCeo imgCeo4" src="images/Judge1.jpg"/>
+			</div></div>
+			<div class="ceoDiv" onclick="javascript:resizeCEOItem('judgesZ', 2)"><div class="ceo">
+				<div class="ceoName hidden animated">Judge Slicked Back Hair</div>
+				<div class="bioBGCeo hidden">
+					<div class="title">
+						<div class="titleText">Judge:</div>
+					</div>
+					<div class="empty"></div>
+					<div class="bioInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc porta lorem mollis lacinia id et sapien. Vivamus maximus risus purus, quis tempor nisl tincidunt eget. Nulla mollis, ante id imperdiet facilisis, augue nisl venenatis justo, eget sagittis turpis libero a risus. Pellentesque rhoncus, risus non interdum rhoncus, libero libero pulvinar felis, id molestie arcu urna id mauris. Curabitur facilisis turpis ultricies elit accumsan, quis eleifend est feugiat. Curabitur condimentum convallis justo a viverra. Aenean eu condimentum nisl. Suspendisse enim metus, porta sit amet lectus quis, tempor ultrices elit. Vestibulum nulla erat, iaculis in nisl et, ultricies feugiat diam. Proin elementum elit sed convallis dignissim. Sed nunc orci, fringilla quis gravida vitae, tempor in tellus. Nunc fermentum eleifend ante. Aliquam erat volutpat. Donec rhoncus dui et orci sodales, ut scelerisque risus iaculis. Proin vitae velit at risus ultrices iaculis. Suspendisse eget congue velit, imperdiet fringilla leo.</div>
+				</div>
+				<img class="imgCeo imgCeo5" src="images/Judge2.jpg"/>
+			</div></div>
+			<div class="ceoDiv" onclick="javascript:resizeCEOItem('judgesZ', 3)"><div class="ceo">
+				<div class="ceoName hidden animated">Judge3 Name</div>
+				<div class="bioBGCeo hidden">
+					<div class="title">
+						<div class="titleText">Judge:</div>
+					</div>
+					<div class="empty"></div>
+					<div class="bioInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc porta lorem mollis lacinia id et sapien. Vivamus maximus risus purus, quis tempor nisl tincidunt eget. Nulla mollis, ante id imperdiet facilisis, augue nisl venenatis justo, eget sagittis turpis libero a risus. Pellentesque rhoncus, risus non interdum rhoncus, libero libero pulvinar felis, id molestie arcu urna id mauris. Curabitur facilisis turpis ultricies elit accumsan, quis eleifend est feugiat. Curabitur condimentum convallis justo a viverra. Aenean eu condimentum nisl. Suspendisse enim metus, porta sit amet lectus quis, tempor ultrices elit. Vestibulum nulla erat, iaculis in nisl et, ultricies feugiat diam. Proin elementum elit sed convallis dignissim. Sed nunc orci, fringilla quis gravida vitae, tempor in tellus. Nunc fermentum eleifend ante. Aliquam erat volutpat. Donec rhoncus dui et orci sodales, ut scelerisque risus iaculis. Proin vitae velit at risus ultrices iaculis. Suspendisse eget congue velit, imperdiet fringilla leo.</div>
+				</div>
+				<img class="imgCeo imgCeo6" src="images/Judge3.jpg"/>
+			</div></div>
+		</div></div>
+	</div>
+</div>
+
+<div class="container-fluid relative coachesZ">
+	<div class="row">
+		<div class="col-xs-12"><div class="ceoWrapper halfHeight">
+			<div class="ceoDiv" onclick="javascript:resizeCEOItem('coachesZ', 1)"><div class="ceo">
+				<div class="ceoName hidden animated">Coach1 Name</div>
+				<div class="bioBGCeo hidden">
+					<div class="title">
+						<div class="titleText">Coach:</div>
+					</div>
+					<div class="empty"></div>
+					<div class="bioInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc porta lorem mollis lacinia id et sapien. Vivamus maximus risus purus, quis tempor nisl tincidunt eget. Nulla mollis, ante id imperdiet facilisis, augue nisl venenatis justo, eget sagittis turpis libero a risus. Pellentesque rhoncus, risus non interdum rhoncus, libero libero pulvinar felis, id molestie arcu urna id mauris. Curabitur facilisis turpis ultricies elit accumsan, quis eleifend est feugiat. Curabitur condimentum convallis justo a viverra. Aenean eu condimentum nisl. Suspendisse enim metus, porta sit amet lectus quis, tempor ultrices elit. Vestibulum nulla erat, iaculis in nisl et, ultricies feugiat diam. Proin elementum elit sed convallis dignissim. Sed nunc orci, fringilla quis gravida vitae, tempor in tellus. Nunc fermentum eleifend ante. Aliquam erat volutpat. Donec rhoncus dui et orci sodales, ut scelerisque risus iaculis. Proin vitae velit at risus ultrices iaculis. Suspendisse eget congue velit, imperdiet fringilla leo.</div>
+				</div>
+				<img class="imgCeo imgCeo7" src="images/Coach1.jpg"/>
+			</div></div>
+			<div class="ceoDiv" onclick="javascript:resizeCEOItem('coachesZ', 2)"><div class="ceo">
+				<div class="ceoName hidden animated">Coach2 Name</div>
+				<div class="bioBGCeo hidden">
+					<div class="title">
+						<div class="titleText">Coach:</div>
+					</div>
+					<div class="empty"></div>
+					<div class="bioInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc porta lorem mollis lacinia id et sapien. Vivamus maximus risus purus, quis tempor nisl tincidunt eget. Nulla mollis, ante id imperdiet facilisis, augue nisl venenatis justo, eget sagittis turpis libero a risus. Pellentesque rhoncus, risus non interdum rhoncus, libero libero pulvinar felis, id molestie arcu urna id mauris. Curabitur facilisis turpis ultricies elit accumsan, quis eleifend est feugiat. Curabitur condimentum convallis justo a viverra. Aenean eu condimentum nisl. Suspendisse enim metus, porta sit amet lectus quis, tempor ultrices elit. Vestibulum nulla erat, iaculis in nisl et, ultricies feugiat diam. Proin elementum elit sed convallis dignissim. Sed nunc orci, fringilla quis gravida vitae, tempor in tellus. Nunc fermentum eleifend ante. Aliquam erat volutpat. Donec rhoncus dui et orci sodales, ut scelerisque risus iaculis. Proin vitae velit at risus ultrices iaculis. Suspendisse eget congue velit, imperdiet fringilla leo.</div>
+				</div>
+				<img class="imgCeo imgCeo8" src="images/Coach2.jpg"/>
+			</div></div>
+			<div class="ceoDiv" onclick="javascript:resizeCEOItem('coachesZ', 3)"><div class="ceo">
+				<div class="ceoName hidden animated">Coach3 Name</div>
+				<div class="bioBGCeo hidden">
+					<div class="title">
+						<div class="titleText">Coach:</div>
+					</div>
+					<div class="empty"></div>
+					<div class="bioInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nunc porta lorem mollis lacinia id et sapien. Vivamus maximus risus purus, quis tempor nisl tincidunt eget. Nulla mollis, ante id imperdiet facilisis, augue nisl venenatis justo, eget sagittis turpis libero a risus. Pellentesque rhoncus, risus non interdum rhoncus, libero libero pulvinar felis, id molestie arcu urna id mauris. Curabitur facilisis turpis ultricies elit accumsan, quis eleifend est feugiat. Curabitur condimentum convallis justo a viverra. Aenean eu condimentum nisl. Suspendisse enim metus, porta sit amet lectus quis, tempor ultrices elit. Vestibulum nulla erat, iaculis in nisl et, ultricies feugiat diam. Proin elementum elit sed convallis dignissim. Sed nunc orci, fringilla quis gravida vitae, tempor in tellus. Nunc fermentum eleifend ante. Aliquam erat volutpat. Donec rhoncus dui et orci sodales, ut scelerisque risus iaculis. Proin vitae velit at risus ultrices iaculis. Suspendisse eget congue velit, imperdiet fringilla leo.</div>
+				</div>
+				<img class="imgCeo imgCeo9" src="images/Coach3.jpg"/>
+			</div></div>
+		</div></div>
+	</div>
+</div>
+
+<div class="container-fluid relative sponsorsZ">
+	<div class="row">
+		<div class="col-xs-12"><div class="sponsorWrapper">
+			<div class="sponsorDiv"><div class="sponsor">
+				<div class="divider"></div>
+				<div class="sponsorName" onclick="javascript:resizeSponsorItem('sponsorsZ', 1)">Diamond</div>
+				<div class="whiteSpace"></div>
+				<div class="imgWrapper">
+					<a href="http://10.100.22.82/"><img class="imgSponsor" src="images/logos/logo-dundee-corp.jpg"/></a>
+				</div>
+			</div></div>
+			<div class="sponsorDiv"><div class="sponsor">
+				<div class="divider"></div>
+				<div class="sponsorName" onclick="javascript:resizeSponsorItem('sponsorsZ', 2)">Platinum</div>
+				<div class="whiteSpace"></div>
+				<div class="imgWrapper">
+					<img class="imgSponsor" src="images/logos/sponsors_RBC.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_SB.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_DF.jpg"/>
+				</div>
+			</div></div>
+			<div class="sponsorDiv"><div class="sponsor">
+				<div class="divider"></div>
+				<div class="sponsorName" onclick="javascript:resizeSponsorItem('sponsorsZ', 3)">Gold</div>
+				<div class="whiteSpace"></div>
+				<div class="imgWrapper">
+					<img class="imgSponsor" src="images/logos/sponsors_ImperialCapital.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_Centrecourt.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_TD.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_NB.jpg"/>
+				</div>
+			</div></div>
+			<div class="sponsorDiv"><div class="sponsor">
+				<div class="divider"></div>
+				<div class="sponsorName" onclick="javascript:resizeSponsorItem('sponsorsZ', 4)">Silver</div>
+				<div class="whiteSpace"></div>
+				<div class="imgWrapper">
+					<img class="imgSponsor" src="images/logos/sponsors_RPIA.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_IS.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_Delavaco.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_BI.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_CG.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_HETF.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_Norton.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_WC.jpg"/>
+				</div>
+			</div></div>
+			<div class="sponsorDiv"><div class="sponsor">
+				<div class="divider"></div>
+				<div class="sponsorName" onclick="javascript:resizeSponsorItem('sponsorsZ', 5)">Bronze</div>
+				<div class="whiteSpace"></div>
+				<div class="imgWrapper">
+					<img class="imgSponsor" src="images/logos/sponsors_RPIA.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_IS.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_WC.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_RPIA.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_IS.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_Delavaco.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_BI.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_CG.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_HETF.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_Delavaco.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_BI.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_CG.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_HETF.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_Norton.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_WC.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_RPIA.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_IS.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_Delavaco.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_BI.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_CG.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_HETF.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_Norton.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_WC.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_RPIA.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_IS.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_Delavaco.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_BI.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_CG.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_HETF.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_Norton.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_WC.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_RPIA.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_WC.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_RPIA.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_IS.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_Delavaco.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_BI.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_CG.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_HETF.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_IS.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_Delavaco.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_BI.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_CG.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_HETF.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_Norton.jpg"/>
+					<img class="imgSponsor" src="images/logos/sponsors_WC.jpg"/>
+				</div>
+			</div></div>
+		</div></div>
+	</div>
+</div>
+
+<div class="container-fluid relative starringZ">
+	<div class="row">
+		<div class="col-xs-12 starOuter relative">
+			<img class="starring" src="images/FinalCurtain.png"/>
+			<img class="chairs" src="images/stage.png"/>
+			<div class="row">
+				<div class="left1 col-xs-7">
+					<br>
+					<div class="tableScroller">
+					<table class="sponsorTable" border="1" cellspacing="0" cellpadding="0">
+					    <tbody>
+					        <tr class="tableHeaderBG" >
+					            <td width="200"><p>SPONSORSHIP LEVEL</p></td>
+					            <td><p align="center">DIAMOND</p></td>
+					            <td><p align="center">PLATINUM</p></td>
+					            <td><p align="center">GOLD</p></td>
+					            <td><p align="center">SILVER</p></td>
+					            <td><p align="center">BRONZE</p></td>
+					            <td><p align="center">FRIEND</p></td>
+					            <td><p align="center">TICKET</p></td>
+					        </tr>
+					        <tr>
+					            <td ><p>COST</p></td>
+					            <td ><p align="center">$100, 000</p></td>
+					            <td ><p align="center">$75, 000</p></td>
+					            <td ><p align="center">$50, 000</p></td>
+					            <td ><p align="center">$25, 000</p></td>
+					            <td ><p align="center">$10, 000</p></td>
+					            <td ><p align="center">$5, 000</p></td>
+					            <td ><p align="center">$2, 000</p></td>
+					        </tr>
+					        <tr>
+					            <td ><p>AVAILABILITY</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					        </tr>
+					        <tr class="tableHeaderBG" >
+					            <td ><p>THEATRE TICKETS</p></td>
+					            <td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+					        </tr>
+					        <tr>
+					            <td ><p>Box Seats</p></td>
+					            <td ><p align="center">48</p></td>
+					            <td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+					        </tr>
+					        <tr>
+					            <td width="146" ><p>Premium Seating</p></td>
+					            <td ></td>
+					            <td ><p align="center">30</p></td>
+					            <td ><p align="center">20</p></td>
+					            <td ></td><td ></td><td ></td><td ></td>
+					        </tr>
+					        <tr>
+					            <td ><p>Traditional Seating</p></td>
+					            <td ></td><td ></td><td ></td>
+					            <td ><p align="center">14</p></td>
+					            <td ><p align="center">8</p></td>
+					            <td ><p align="center">4</p></td>
+					            <td ><p align="center">2</p></td>
+					        </tr>
+					        <tr>
+					            <td ><p>TICKET INCLUDES POST SHOW EVENT</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					        </tr>
+					        <tr class="tableHeaderBG">
+					        	<td ><p>LOGO REPRESENTATION</p></td>
+					            <td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+					        </tr>
+					        <tr>
+					            <td ><p>Below title on all promotional items</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+					        </tr>
+					        <tr>
+					            <td ><p>On the main stage</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ></td><td ></td>
+					        </tr>
+					        <tr>
+					            <td ><p>On our post-event thank you ad</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ></td><td ></td>
+					        </tr>
+					        <tr class="tableHeaderBG">
+					            <td ><p>PLAYBILL REPRESENTATION</p></td>
+					            <td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+					        </tr>
+					        <tr>
+					            <td ><p>Full-page ad</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ></td><td ></td><td ></td><td ></td>
+					        </tr>
+					        <tr>
+					            <td ><p>Half-page ad</p></td>
+					            <td ></td><td ></td><td ></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ></td><td ></td>
+					        </tr>
+					        <tr>
+					            <td ><p>Recognition</p></td>
+					            <td ></td><td ></td><td ></td><td ></td><td ></td>
+					            <td ><p align="center">YES</p></td>
+					            <td ></td>
+					        </tr>
+					        <tr class="tableHeaderBG">
+					            <td ><p>PHOTO WITH CAST</p></td>
+					            <td ><p align="center">8</p></td>
+					            <td ><p align="center">4</p></td>
+					            <td ><p align="center">2</p></td>
+					            <td ></td><td ></td><td ></td><td ></td>
+					        </tr>
+					        <tr class="tableHeaderBG">
+					            <td><p>GIFT CONFIRMATION RECEIPT</p></td>
+					            <td colspan="7" ><p>Companies sponsoring Humour Me will receive a gift confirmation receipt for the total value of the sponsorship</p></td>
+					        </tr>
+					        <tr class="tableHeaderBG">
+					        	<td ><p>PERSONAL TAX RECEIPT</p></td>
+					            <td colspan="7" ><p>Individuals sponsoring Humour Me personally will receive a tax receipt for the maximum amount allowable</p></td>
+					        </tr>
+					        <tr>
+					            <td colspan="8" ><p align="right">David Goodman Youth Community Trust, Charitable Registration Number 85252 5864 RR0001</p></td>
+					        </tr>
+					    </tbody>
+					</table>
+					</div>
+				</div>
+				<div class="right1 col-xs-5">
+					<div class="bioBG">
+						<div class="bioSign"><a class="bioSignText" href="javascript:hideDiv('right1', 'left1')">Contact Info</a></div>
+						<div class="title"><div class="titleText"></div></div>
+						<div class="empty"></div>
+						<div class="bioInfo">
+							E-mail: <a class="email" href="HumourMe@Dundeecorp.com">HumourMe@Dundeecorp.com</a> <br> 
+							Phone: 1 (416) 555-6789 <br><br> 
+							Location:<br>
+							Eglin Theatre<br>
+							189 Yonge St<br>
+							Toronto, Ontario<br>
+							(416) 314-2901<br>
+							<img class="sponsoring" src="images/Blue.jpg"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="js/bootstrap.js"></script>
+
+<script src="js/humourMeJS.js"></script>
+<script src="js/ceoAnimation.js"></script>
+<script src="js/ceoMouseDownEvent.js"></script>
+<script src="js/replaceImages.js"></script>
+<script src="js/resizeScreen.js"></script>
+<script src="js/resizeSponsor.js"></script>
+	
+</body>
+</html>

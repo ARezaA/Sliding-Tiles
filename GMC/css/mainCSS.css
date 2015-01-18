@@ -1,0 +1,335 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic&subset=latin,latin-ext);
+
+body{
+	height:100%;
+}
+
+.mapImg{
+	width:100%;
+	margin-top:0px;
+}
+
+.image-container{
+	width:100%;
+	padding: 6px;
+	height:220px;
+	z-index: 100;
+}
+
+.image-container.imgTall{
+	height:440px;
+}
+
+.fadeImg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.tileImg{
+	float:left;
+}
+
+.tileMessage{
+	position: absolute;
+	left:20px;
+	top:20px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 14pt;
+}
+
+.tileTitle{
+	font-size: 20pt;
+}
+
+/*
+.rowBG{
+	background-color:blue;
+}
+
+.row.rowBG{
+	background-color:blue;
+}
+*/
+
+.logoHeight{
+	margin-top:-10px;
+	height:45px;
+}
+
+.linkHeight{
+	margin-top:7px;
+}
+
+.itemsHeight{
+	margin-top:-4px;
+}
+
+.logoImg{
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	z-index: 10;
+}
+
+.headerLink{
+	color:black;
+	font-family: 'Lato', sans-serif;
+}
+
+.gutterLeft{
+	margin-left:15px;
+}
+
+.gutterRight{
+	margin-right: 15px;
+}
+
+span.headerLink:hover{
+	color:#d49f29;
+}
+
+.headerText{
+	color: black;
+	text-align: center;
+	font-size: 48pt;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+}
+
+.headerText.headerSmall{
+	font-size: 14pt;
+	margin-right: 30;
+	margin-left: 30;
+}
+
+.headerHeight{
+	height:80px;
+	display: table;
+}
+
+.dropDownColor{
+
+}
+.dropDownColorBtn{
+	
+}
+.dropDownColorItems{
+
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: white;
+  background-color: #d49f29;
+}
+
+.contentStyle{
+	background:url("../images/contentBG.png");
+	background-size: 100%;
+	background-repeat:no-repeat;
+	padding-left:15px;
+	padding-right:15px;
+	font-family: 'Lato', sans-serif;
+}
+
+.invisible{
+	visibility: hidden;
+}
+
+.invisibleV2{
+	visibility: hidden;
+	display:none;
+}
+
+.blurb{
+	/*border: 2px #e7e7e7 solid; */
+	padding-top:25px; 
+	padding-bottom:0px; 
+	margin-left:5px; 
+	margin-right:5px;
+}
+
+.navbar-nav > li:hover > .dropdown-menu {
+  display: block;
+}
+
+
+@media screen and (max-width:1920px){
+	.image-container{
+		height:420px;
+	}
+	.image-container.imgTall{
+		height:840px;
+	}
+	.tileMessage{
+		font-size:18pt;
+	}
+	.tileTitle{
+		font-size: 24pt;
+	}
+}
+
+@media screen and (max-width:1601px){
+	.image-container{
+		height:360px;
+	}
+	.image-container.imgTall{
+		height:720px;
+	}
+	.tileMessage{
+		font-size:14pt;
+	}
+	.tileTitle{
+		font-size: 20pt;
+	}
+}
+
+@media screen and (max-width:1281px){
+	.image-container{
+		height:280px;
+	}
+	.image-container.imgTall{
+		height:560px;
+	}
+	.tileMessage{
+		font-size:14pt;
+	}
+	.tileTitle{
+		font-size: 20pt;
+	}
+}
+
+@media screen and (max-width:1024px){
+	.image-container{
+		height:260px;
+	}
+	.image-container.imgTall{
+		height:520px;
+	}
+	.tileMessage{
+		font-size:14pt;
+	}
+	.tileTitle{
+		font-size: 20pt;
+	}
+}
+
+@media screen and (max-width:900px){
+	.image-container{
+		height:220px;
+	}
+	.image-container.imgTall{
+		height:440px;
+	}
+	.tileMessage{
+		font-size:12pt;
+	}
+	.tileTitle{
+		font-size: 18pt;
+	}
+}
+
+@media screen and (max-width:801px){
+	.image-container{
+		height:200px; 
+	}
+	.image-container.imgTall{
+		height:400px;
+	}
+	.tileMessage{
+		font-size:12pt;
+	}
+	.tileTitle{
+		font-size: 18pt;
+	}
+}
+
+@media screen and (max-width:769px){
+	.image-container{
+		height:200px;
+	}
+	.image-container.imgTall{
+		height:400px;
+	}
+	.tileMessage{
+		left:10px;
+		top:10px;
+		font-size:11pt;
+	}
+	.tileTitle{
+		font-size: 17pt;
+	}
+}
+
+@media screen and (max-width:601px){
+	.image-container{
+		height:170px;
+	}
+	.image-container.imgTall{
+		height:340px;
+	}
+	.tileMessage{
+		font-size:10pt;
+	}
+	.tileTitle{
+		font-size: 16pt;
+	}
+}
+
+@media screen and (max-width:480px){
+	.image-container{
+		height:130px;
+		padding: 3px;
+	}
+	.image-container.imgTall{
+		height:260px;
+	}
+	.tileMessage{
+		left:5px;
+		top:5px;
+		font-size:10pt;
+	}
+	.tileTitle{
+		font-size: 16pt;
+	}
+}
+
+@media screen and (max-width:321px){
+	.image-container{
+		height:90px;
+		padding: 3px;
+	}
+	.image-container.imgTall{
+		height:180px;
+	}
+	.tileMessage{
+		left:5px;
+		top:5px;
+		font-size:8pt;
+	}
+	.tileTitle{
+		font-size: 10pt;
+	}
+}
+
+.printIcon{
+	height:25px;
+}
+
+.printLinkHeight{
+	margin-top:3px;
+}
+
+.printFont{
+	font-family: 'Lato', sans-serif;
+	margin-left:15px;
+	margin-right:15px;
+}
+
+.boldFont{
+	font-family: 'Lato-bold', sans-serif;
+}
